@@ -4,7 +4,6 @@ Created on Thu Nov 14 20:13:10 2019
 
 @author: Matthew D'Ambrosio
 """
-
 #%%
 
 import pandas as pd
@@ -212,49 +211,3 @@ plt.show()
 model.fit(rfr_df['Actual'].values.reshape(-1,1), rfr_df['Predicted'].values.reshape(-1,1))
 print('Slope:', model.coef_)  
 print('Intercept:', model.intercept_)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
