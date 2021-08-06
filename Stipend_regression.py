@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 #We'll be coorelating LW with State, Subject, and University
 categories = ['LW Ratio', 'Stipend', 'State', 'University', 'Subject']
-stip = pd.read_csv('C:/Users/mattd/Desktop/Projects/Python Projects/Stipend Analysis/stipend_and_locations.csv', encoding = 'latin-1')[categories]
+stip = pd.read_csv('stipend_and_locations.csv', encoding = 'latin-1')[categories]
 stip = stip.replace(r'^\s*$', np.nan, regex=True)
 
 stip[stip['State']=='Alaska']
